@@ -34,6 +34,8 @@
 </head>
 
 <body>
+
+  
   <div id="wrapper">
     
     <div style="width: 100%; height: 30px; background-color: #f03c02;"></div>
@@ -53,195 +55,7 @@
     </div>
     <!-- end toggle top area -->
     <!-- start header -->
-    <header>
-      <div class="container ">
-        <!-- hidden top area toggle link -->
-        <div id="header-hidden-link">
-          <a href="#" class="toggle-link" title="Click me you'll get a surprise" data-target=".hidden-top"><i></i>Open</a>
-        </div>
-        <!-- end toggle link -->
-        <div class="row nomargin">
-          <div class="span12">
-            <div class="headnav">
-              <ul>
-                <li><a href="#mySignup" data-toggle="modal"><i class="icon-user"></i> Sign up</a></li>
-                <li><a href="#mySignin" data-toggle="modal">Sign in</a></li>
-              </ul>
-            </div>
-            <!-- Signup Modal -->
-            <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
-              </div>
-              <div class="modal-body">
-                <form class="form-horizontal">
-                  <div class="control-group">
-                    <label class="control-label" for="inputEmail">Email</label>
-                    <div class="controls">
-                      <input type="text" id="inputEmail" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="inputSignupPassword">Password</label>
-                    <div class="controls">
-                      <input type="password" id="inputSignupPassword" placeholder="Password">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="inputSignupPassword2">Confirm Password</label>
-                    <div class="controls">
-                      <input type="password" id="inputSignupPassword2" placeholder="Password">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="controls">
-                      <button type="submit" class="btn">Sign up</button>
-                    </div>
-                    <p class="aligncenter margintop20">
-                      Already have an account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Sign in</a>
-                    </p>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <!-- end signup modal -->
-            <!-- Sign in Modal -->
-            <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySigninModalLabel" aria-hidden="true">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 id="mySigninModalLabel">Login to your <strong>account</strong></h4>
-              </div>
-              <div class="modal-body">
-                <form class="form-horizontal">
-                  <div class="control-group">
-                    <label class="control-label" for="inputText">Username</label>
-                    <div class="controls">
-                      <input type="text" id="inputText" placeholder="Username">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="inputSigninPassword">Password</label>
-                    <div class="controls">
-                      <input type="password" id="inputSigninPassword" placeholder="Password">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="controls">
-                      <button type="submit" class="btn">Sign in</button>
-                    </div>
-                    <p class="aligncenter margintop20">
-                      Forgot password? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Reset</a>
-                    </p>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <!-- end signin modal -->
-            <!-- Reset Modal -->
-            <div id="myReset" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="myResetModalLabel" aria-hidden="true">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 id="myResetModalLabel">Reset your <strong>password</strong></h4>
-              </div>
-              <div class="modal-body">
-                <form class="form-horizontal">
-                  <div class="control-group">
-                    <label class="control-label" for="inputResetEmail">Email</label>
-                    <div class="controls">
-                      <input type="text" id="inputResetEmail" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="controls">
-                      <button type="submit" class="btn">Reset password</button>
-                    </div>
-                    <p class="aligncenter margintop20">
-                      We will send instructions on how to reset your password to your inbox
-                    </p>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <!-- end reset modal -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="span4">
-            <div class="logo">
-              <a href="index.html"><img src="img/logo.png" alt="" class="logo" /></a>
-              <h1>Welcome to the cinnamon community</h1>
-            </div>
-          </div>
-          <div class="span8">
-            <div class="navbar navbar-static-top">
-              <div class="navigation">
-                <nav>
-                  <ul class="nav topnav">
-                    <li class="dropdown active">
-                      <a href="index.html">Home <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="index-alt2.html">Homepage 2</a></li>
-                        <li><a href="index-alt3.html">Homepage 3</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#">Features <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="typography.html">Typography</a></li>
-                        <li><a href="table.html">Table</a></li>
-                        <li><a href="components.html">Components</a></li>
-                        <li><a href="animations.html">56 Animations</a></li>
-                        <li><a href="icons.html">Icons</a></li>
-                        <li><a href="icon-variations.html">Icon variations</a></li>
-                        <li class="dropdown"><a href="#">3 Sliders <i class="icon-angle-right"></i></a>
-                          <ul class="dropdown-menu sub-menu-level1">
-                            <li><a href="index.html">Nivo slider</a></li>
-                            <li><a href="index-alt2.html">Slit slider</a></li>
-                            <li><a href="index-alt3.html">Parallax slider</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#">Pages <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="pricingbox.html">Pricing boxes</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="404.html">404</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#">Portfolio <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
-                        <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
-                        <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
-                        <li><a href="portfolio-detail.html">Portfolio detail</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#">Blog <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
-                        <li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
-                        <li><a href="post-left-sidebar.html">Post left sidebar</a></li>
-                        <li><a href="post-right-sidebar.html">Post right sidebar</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <!-- end navigation -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <?php include "header.php"; ?>
     <!-- end header -->
     <section id="featured">
       <!-- start slider -->
@@ -294,6 +108,9 @@
       </div>
       <!-- end slider -->
     </section>
+
+
+
     <section class="callaction">
       <div class="container">
         <div class="row">
@@ -303,7 +120,7 @@
                 <h3>Haven't you still <span class="highlight"><strong>registered</strong></span> with our network!</h3>
               </div>
               <div class="cta floatright">
-                <a class="btn btn-large btn-theme btn-rounded" href="#">Register Now</a>
+                <a class="btn btn-large btn-theme btn-rounded" href="#mySignup" data-toggle="modal">Register Now</a>
               </div>
             </div>
           </div>
@@ -370,62 +187,64 @@
 
 
 
+
+
         <div class="row">
           <div class="span12">
             <div class="row">
               <div class="span3">
                 <div class="box aligncenter">
                   <div class="aligncenter icon">
-                    <i class="icon-briefcase icon-circled icon-64 active"></i>
+                    <i class="font-icon-group icon-circled icon-64 active"></i>
                   </div>
                   <div class="text">
-                    <h6>Corporate business</h6>
+                    <h6>Consumer</h6>
                     <p>
-                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                      The Ceylon Cinnamon Network Consumer Division was formulated at for realization that emerging market consumers hold the key to long term success. 
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="#" data-toggle="modal" data-target="#consumerModal" >Learn more</a>
                   </div>
                 </div>
               </div>
               <div class="span3">
                 <div class="box aligncenter">
                   <div class="aligncenter icon">
-                    <i class="icon-desktop icon-circled icon-64 active"></i>
+                    <i class="font-icon-briefcase icon-circled icon-64 active"></i>
                   </div>
                   <div class="text">
-                    <h6>Responsive theme</h6>
+                    <h6>Our Partners</h6>
                     <p>
-                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                      Sri Lanka is the world's largest producer and exporter of pure cinnamon to the world and pure Ceylon Cinnamon Suppliers from Sri Lanka claim 90% of global market share.
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="#" data-toggle="modal" data-target="#partnerModal">Learn more</a>
                   </div>
                 </div>
               </div>
               <div class="span3">
                 <div class="box aligncenter">
                   <div class="aligncenter icon">
-                    <i class="icon-beaker icon-circled icon-64 active"></i>
+                    <i class="icon-food icon-circled icon-64 active"></i>
                   </div>
                   <div class="text">
-                    <h6>Coded carefully</h6>
+                    <h6>Agriculture</h6>
                     <p>
-                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                      Cinnamon was one of the first traded spices of the ancient world. Cinnamon has motivated in European market and Sri Lanka became as the world's most excessive cinnamon producer and accounts for about 70 per cent of the global production.
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="#" data-toggle="modal" data-target="#agriModal">Learn more</a>
                   </div>
                 </div>
               </div>
               <div class="span3">
                 <div class="box aligncenter">
                   <div class="aligncenter icon">
-                    <i class="icon-coffee icon-circled icon-64 active"></i>
+                    <i class="font-icon-social-viddler icon-circled icon-64 active"></i>
                   </div>
                   <div class="text">
-                    <h6>Sit and enjoy</h6>
+                    <h6>Advertising</h6>
                     <p>
-                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                      We are giving premium classified advertising opportunity to you. Everything you need to look and feel amazing! 
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="#" data-toggle="modal" data-target="#advertisingModal">Learn more</a>
                   </div>
                 </div>
               </div>
@@ -544,6 +363,7 @@
       </div>
     </footer>
   </div>
+
   <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
   <!-- javascript
     ================================================== -->
