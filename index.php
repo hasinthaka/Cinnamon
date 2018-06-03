@@ -120,7 +120,7 @@
                 <h3>Haven't you still <span class="highlight"><strong>registered</strong></span> with our network!</h3>
               </div>
               <div class="cta floatright">
-                <a class="btn btn-large btn-theme btn-rounded" href="#mySignup" data-toggle="modal">Register Now</a>
+                <a class="btn btn-large btn-theme btn-rounded" href="#mySignupSelect" data-toggle="modal">Register Now</a>
               </div>
             </div>
           </div>

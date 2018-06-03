@@ -2715,3 +2715,15 @@ article img.pull-right, article .align-right {
 }
 
 /* Theme Styler :: End */
+
+.select-sighup{
+  text-align: center;
+}
+
+.signup-selector{
+  width: 300px;
+  height: 50px;
+  font-size: 15px;
+  background-color: #f03c02;
+  color: #fff;
+}

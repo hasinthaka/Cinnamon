@@ -9,7 +9,7 @@
           <div class="span12">
             <div class="headnav">
               <ul>
-                <li><a href="#mySignup" data-toggle="modal"><i class="icon-user"></i> Sign up</a></li>
+                <li><a href="#mySignupSelect" data-toggle="modal"><i class="icon-user"></i> Sign up</a></li>
                 <li><a href="#mySignin" data-toggle="modal">Sign in</a></li>
               </ul>
             </div>
@@ -74,17 +74,69 @@ In our social networking model there are several types of participant. They are<
               </div>
             </div>
 
+            <!-- Signup Selection Modal -->
+            <div id="mySignupSelect" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal select-sighup">
+                  <div class="control-group">
+                    <button type="button" class="btn signup-selector" href="#exportSignup" data-dismiss="modal" data-toggle="modal">Cinnamon Exporting Company</button>
+                  </div>
+                  <div class="control-group">
+                    <button type="button" class="btn signup-selector" href="#importersSignup" data-dismiss="modal" data-toggle="modal">Cinnamon Importer</button>
+                  </div>
+                  <div class="control-group">
+                    <button type="button" class="btn signup-selector" href="#stateOwnerSignup" data-dismiss="modal" data-toggle="modal">State Owner</button>
+                  </div>
+                  <div class="control-group">
+                    <button type="button" class="btn signup-selector" href="#farmerSignup" data-dismiss="modal" data-toggle="modal">Farmer</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signup selection modal -->
 
-
-
-            <!-- Signup Modal -->
-            <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
+            <!-- Signup Export Modal -->
+            <div id="exportSignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
               </div>
               <div class="modal-body">
                 <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputName">Name</label>
+                    <div class="controls">
+                      <input type="text" id="inputName" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputAddress">Address</label>
+                    <div class="controls">
+                      <input type="text" id="inputAddress" placeholder="Address">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputContactNo">Contact Number</label>
+                    <div class="controls">
+                      <input type="text" id="inputContactNo" placeholder="Contact Number">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputCompany">Company</label>
+                    <div class="controls">
+                      <input type="text" id="inputCompany" placeholder="Company">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputRegNo">Registration Number</label>
+                    <div class="controls">
+                      <input type="text" id="inputRegNo" placeholder="Registration Number">
+                    </div>
+                  </div>
                   <div class="control-group">
                     <label class="control-label" for="inputEmail">Email</label>
                     <div class="controls">
@@ -114,7 +166,231 @@ In our social networking model there are several types of participant. They are<
                 </form>
               </div>
             </div>
-            <!-- end signup modal -->
+            <!-- end signup export modal -->
+
+            <!-- Signup Import Modal -->
+            <div id="importersSignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputName">Name</label>
+                    <div class="controls">
+                      <input type="text" id="inputName" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputAddress">Address</label>
+                    <div class="controls">
+                      <input type="text" id="inputAddress" placeholder="Address">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputContactNo">Contact Number</label>
+                    <div class="controls">
+                      <input type="text" id="inputContactNo" placeholder="Contact Number">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword">Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword2">Confirm Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword2" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Sign up</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Already have an account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Sign in</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signup import modal -->
+
+            <!-- Signup State Owner Modal -->
+            <div id="stateOwnerSignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputFirstName">First Name</label>
+                    <div class="controls">
+                      <input type="text" id="inputFirstName" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputLastName">Last Name</label>
+                    <div class="controls">
+                      <input type="text" id="inputLastName" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputGender">Gender</label>
+                    <div class="controls">
+                      <label class="radio-inline"><input type="radio" name="optGender">  Male</label>
+                      <label class="radio-inline"><input type="radio" name="optGender">  Female</label>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputDOB">Date of Birth</label>
+                    <div class="controls">
+                      <input type="text" id="inputDOB" placeholder="dd/mm/yyyy">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputAddress">Address</label>
+                    <div class="controls">
+                      <input type="text" id="inputAddress" placeholder="Address">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputContactNo">Contact Number</label>
+                    <div class="controls">
+                      <input type="text" id="inputContactNo" placeholder="Contact Number">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputRegNo">Registration Number</label>
+                    <div class="controls">
+                      <input type="text" id="inputRegNo" placeholder="Registration Number">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword">Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword2">Confirm Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword2" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Sign up</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Already have an account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Sign in</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signup State Owner modal -->
+
+            <!-- Signup Farmer Modal -->
+            <div id="farmerSignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputFirstName">First Name</label>
+                    <div class="controls">
+                      <input type="text" id="inputFirstName" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputLastName">Last Name</label>
+                    <div class="controls">
+                      <input type="text" id="inputLastName" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputGender">Gender</label>
+                    <div class="controls">
+                      <label class="radio-inline"><input type="radio" name="optGender">  Male</label>
+                      <label class="radio-inline"><input type="radio" name="optGender">  Female</label>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputDOB">Date of Birth</label>
+                    <div class="controls">
+                      <input type="text" id="inputDOB" placeholder="dd/mm/yyyy">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputAddress">Address</label>
+                    <div class="controls">
+                      <input type="text" id="inputAddress" placeholder="Address">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputContactNo">Contact Number</label>
+                    <div class="controls">
+                      <input type="text" id="inputContactNo" placeholder="Contact Number">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputRegNo">Registration Number</label>
+                    <div class="controls">
+                      <input type="text" id="inputRegNo" placeholder="Registration Number">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword">Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword2">Confirm Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword2" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Sign up</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Already have an account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Sign in</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signup Farmer modal -->
+
+            
+
             <!-- Sign in Modal -->
             <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySigninModalLabel" aria-hidden="true">
               <div class="modal-header">
